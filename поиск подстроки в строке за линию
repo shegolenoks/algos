@@ -1,0 +1,11 @@
+bool check(string a, string b) {
+    ll k = 0;
+    string ans = "";
+    for (int i = 0; i < a.size(); i++) {
+        if (a[i] == b[k]) {
+            ans += a[i];
+            k++;
+        }
+    }
+    return ans == b;
+}
